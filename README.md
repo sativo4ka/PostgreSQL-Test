@@ -56,9 +56,57 @@
 - выполнение SQL-запросов;
 - производительность запросов с помощью `EXPLAIN ANALYZE`.
 
-## 6. Результаты тестирования
+## 6. Скриншоты
 
-Результаты выполнения запросов будут представлены в виде скриншотов из pgAdmin 4.
+01_database_structure
+
+<img width="140" height="147" alt="{293878F3-BD05-403F-88C9-F72A41503DAA}" src="https://github.com/user-attachments/assets/59274237-e47b-460b-a8d6-84b7974333ed" />
+
+02_categories
+
+<img width="302" height="114" alt="{46F6747E-5D6F-4E77-8656-E6076C0DBF25}" src="https://github.com/user-attachments/assets/14b89842-55e1-4935-8d22-7d3009628742" />
+
+03_customers 
+
+<img width="448" height="164" alt="{02BC3262-4994-4F6A-AF71-2D2DC6F7F755}" src="https://github.com/user-attachments/assets/7c55b864-d652-416d-94c7-98f687111c17" />
+
+04_order_items
+
+<img width="380" height="193" alt="{9BC5F5DE-8707-4474-8EF1-A5FD512C2EEF}" src="https://github.com/user-attachments/assets/e15284a9-6658-4722-ace3-3ef3617b274c" />
+
+05_orders
+
+<img width="331" height="140" alt="{27C2EB46-B717-4D60-8F28-C0AB4F99FDC7}" src="https://github.com/user-attachments/assets/f18275a8-5e4e-48eb-a39b-38b76c911fcd" />
+
+06_products
+
+<img width="500" height="212" alt="{1251D2C6-45A6-4A6E-BF15-F8BA28C78160}" src="https://github.com/user-attachments/assets/0b838b24-bcf0-4743-b8bd-616644d8393d" />
+
+07_query_1
+
+<img width="527" height="660" alt="{0B187C34-F7A6-4635-92CC-F954E7F93D45}" src="https://github.com/user-attachments/assets/1fda602c-1800-415a-a94b-50d1f9b4524a" />
+
+08_query_2
+
+<img width="546" height="691" alt="{BB4385D2-0EF4-483F-8556-70F3F35390B3}" src="https://github.com/user-attachments/assets/0de89ca2-834e-4c5d-99a9-d8ec636f94bb" />
+
+09_query_3
+
+<img width="519" height="660" alt="{DAC333FF-6601-42CC-8335-7490BD19C110}" src="https://github.com/user-attachments/assets/4abf20d2-ac92-4941-bacb-f7bba6b1096d" />
+
+10_query_4
+
+<img width="735" height="664" alt="{D366BCA3-9B8E-4D34-A410-0DD7C2FEC5F8}" src="https://github.com/user-attachments/assets/1dd65498-b523-4c9f-85bf-c22fc643c6cc" />
+
+11_query_5
+
+<img width="471" height="647" alt="{ACF474E7-FA38-40F3-A4D7-EB02A502C105}" src="https://github.com/user-attachments/assets/477a051d-542e-446e-b177-8870f087bf7f" />
+
+12_indexes
+
+<img width="628" height="647" alt="{75722870-9D13-4D13-8C12-4C755115C125}" src="https://github.com/user-attachments/assets/fa320613-2ba2-4ffa-9438-cba777719b87" />
+
+## 7. Результаты тестирования
 
 | № | Проверяемый запрос | Результат |
 |---|---|---|
@@ -68,21 +116,21 @@
 | 4 | Покупатели без заказов в прошлом году | Проверяется |
 | 5 | Товары, которые никогда не заказывали | Проверяется |
 
-## 7. Ошибки и предупреждения
+## 8. Ошибки и предупреждения
 
 Для проверки запросов, связанных с предыдущим календарным годом, необходимо учитывать актуальность тестовых дат.
 Из-за небольшого объема тестовых данных оценка производительности индексов носит предварительный характер.
 
 Критических ошибок в логике запросов на этапе подготовки не выявлено. Окончательный результат проверки определяется после выполнения всех запросов.
 
-## 8. Рекомендации
+## 9. Рекомендации
 
 - Использовать индексы для ускорения выполнения запросов.
 - Проверять корректность связей между таблицами.
 - Использовать ограничения для предотвращения некорректного ввода данных.
 - Анализировать планы выполнения запросов с помощью `EXPLAIN ANALYZE`.
 
-## 9. Заключение
+## 10. Заключение
 
 В результате работы создана реляционная база данных PostgreSQL из пяти связанных таблиц, подготовлены тестовые данные и разработаны пять SQL-запросов для анализа информации о покупателях, товарах и заказах.
 Проведено тестирование структуры базы данных, ограничений и производительности запросов.
